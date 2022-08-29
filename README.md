@@ -4,7 +4,7 @@
 ----
  ## Vorhaben 
 ---
-Mein Ziel war es, das Projekt so gut wie möglich umsetzen zu können. Der Aufbau und die Bestellung der Komponenten haben mir aufgrund der guten Dokumentation keine Schwierigkeiten bereitet. Um den Code auf den Arduino zu kompilieren, habe ich versucht, mit Platformio in Visual Studio Code zu arbeiten. Hierbei bin ich auf verschiedene Schwierigkeiten gestoßen und habe die genaue Fehlerursache nach mehreren Versuchen nicht aufheben können. Auf der Webseite von ElectricityforProgress wird ein ähnliches Projekt mit einem ESP erklärt. Das Projekt verwendet daneben noch weitere Komponenten, die ich nicht zur Verfügung hatte. Sodass ich versucht habe, das Problem mit Arduino IDE zu lösen. Ich habe den Zip Ordner des Projektes heruntergeladen und die Bibliotheken heruntergeladen und den Code kompiliert. Nachdem der Arduino auf Berührung der Pflanze reagiert hat, habe ich den Plant Music Synthezier an ein Audiointerface angeschlossen und verscuht die Daten in Ableton Live 11 aufzunehmen. Die Audiodatei stellt leider kein zufriedenstellendes Ergebnis dar, jedoch hat das Berühren der Pflanze Signale an Ableton senden können. Für die Zukunft würde ich gerne die Komponenten löten und die Auswertung der Midi Daten besser verwenden können.
+Mein Ziel war es, das Projekt so gut wie möglich umsetzen zu können. Der Aufbau und die Bestellung der Komponenten haben mir aufgrund der guten Dokumentation keine Schwierigkeiten bereitet. Um den Code auf den Arduino zu kompilieren, habe ich mit Platformio in Visual Studio Code gearbeitet. Hierbei bin ich auf verschiedene Schwierigkeiten gestoßen und habe die genaue Fehlerursache nach mehreren Versuchen nicht finden können. Auf der Webseite von ElectricityforProgress wird ein ähnliches Projekt mit einem ESP erklärt. Das Projekt verwendet noch weitere Komponenten, die mir nicht zur Verfügung standen. Sodass ich versucht habe, das Problem mit Arduino IDE zu lösen. Ich habe den Zip Ordner des Projektes heruntergeladen und die Bibliotheken heruntergeladen und den Code kompiliert. Nachdem der Arduino auf Berührung der Pflanze reagiert hat, habe ich den Plant Music Synthezier an ein Audiointerface angeschlossen und verscuht die Daten in Ableton Live 11 aufzunehmen. Die Audiodatei stellt leider kein zufriedenstellendes Ergebnis dar, jedoch hat das Berühren der Pflanze Signale an Ableton senden können. Für die Zukunft würde ich gerne die Komponenten löten und die Auswertung der Midi Daten besser verwerten können.
 
 ![PlantMusicBild](https://user-images.githubusercontent.com/96259797/187294631-4dfe9e2f-7f96-4234-8972-a8871d819966.jpg)
 
@@ -90,6 +90,7 @@ Quelle: https://github.com/jgillick/arduino-LEDFader
 ## Midi Serial Code 
 MIDI ist ein asynchrones serielles Datenprotokoll. Der Standard-MIDI-Anschluss ist ein 5-poliger Anschluss. Der Controller sendet Daten unter Verwendung einer asynchronen seriellen Kommunikation über diesen Anschluss, und das empfangende Soundmodul (z. B. Synthesizer, Sampler oder ein anderes Ausgabegerät) liest diese Daten und interpretiert die Befehle, um Sound zu erzeugen. 
 Quelle: https://tigoe.github.io/SoundExamples/midi-serial.html
+https://www.spikenzielabs.com/learn/serial_midi.html
 
 
 https://user-images.githubusercontent.com/96259797/187295526-9572c0af-da6e-4f25-81d6-6272b815c819.mov
